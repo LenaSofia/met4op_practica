@@ -166,7 +166,7 @@ for numero_dn, probabilidad_dn in dado_negro.items():
             else:
                 distribucion_probabilidad_X[((numero_dn + numero_db) - 7)**2] = probabilidad_dn * probabilidad_db
 
-            print('[', numero_dn, numero_db, ']', (((numero_dn + numero_db) - 7) ** 2), '=', (probabilidad_dn * probabilidad_db))
+            print('[', 'dn', numero_dn, 'db', numero_db, ']', (((numero_dn + numero_db) - 7) ** 2), '=', (probabilidad_dn * probabilidad_db))
 
     elif numero_dn in pares:
         for numero_db, probabilidad_db in dado_negro_impar_dado_blanco.items():
@@ -175,7 +175,7 @@ for numero_dn, probabilidad_dn in dado_negro.items():
             else:
                 distribucion_probabilidad_X[((numero_dn + numero_db) - 7) ** 2] = probabilidad_dn * probabilidad_db
 
-            print('[', numero_dn, numero_db, ']', (((numero_dn + numero_db) - 7) ** 2), '=', (probabilidad_dn * probabilidad_db))
+            print('[', 'dn', numero_dn, 'db', numero_db, ']', (((numero_dn + numero_db) - 7) ** 2), '=', (probabilidad_dn * probabilidad_db))
 
 pprint.pprint(distribucion_probabilidad_X)
 

@@ -32,8 +32,10 @@ for numero_dn, probabilidad_dn in dado_negro.items():
 
         if (((numero_dn + numero_db) - 7)**2) in distribucion_probabilidad_X:
             distribucion_probabilidad_X[((numero_dn + numero_db) - 7) ** 2] += probabilidad_dn * probabilidad_db
+            print('[', "db", numero_db, "dn", numero_dn, ']', (((numero_dn + numero_db) - 7)**2), '=', (probabilidad_dn * probabilidad_db))
         else:
             distribucion_probabilidad_X[((numero_dn + numero_db) - 7)**2] = probabilidad_dn * probabilidad_db
+            print('[', "db", numero_db, "dn", numero_dn, ']', (((numero_dn + numero_db) - 7)**2), '=', (probabilidad_dn * probabilidad_db))
 
 pprint.pprint(distribucion_probabilidad_X)
 

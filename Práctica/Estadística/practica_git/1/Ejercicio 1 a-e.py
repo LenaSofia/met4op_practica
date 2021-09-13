@@ -56,14 +56,14 @@ print('La probabilidad de obtener dos dados cuyos números sean consecutivos es 
 
 # B. ¿Cuál es la probabilidad de obtener un número par e impar en una tirada?
 
-promedio_par_impar = ((dado_negro[1] * dado_blanco[2]) + (dado_negro[1] * dado_blanco[4]) + (dado_negro[1] * dado_blanco[6])
+probabilidad_par_impar = ((dado_negro[1] * dado_blanco[2]) + (dado_negro[1] * dado_blanco[4]) + (dado_negro[1] * dado_blanco[6])
            + (dado_negro[2] * dado_blanco[1]) + (dado_negro[2] * dado_blanco[3]) + (dado_negro[2] * dado_blanco[5])
            + (dado_negro[3] * dado_blanco[2]) + (dado_negro[3] * dado_blanco[4]) + (dado_negro[3] * dado_blanco[6])
            + (dado_negro[4] * dado_blanco[1]) + (dado_negro[4] * dado_blanco[3]) + (dado_negro[4] * dado_blanco[5])
            + (dado_negro[5] * dado_blanco[2]) + (dado_negro[5] * dado_blanco[4]) + (dado_negro[5] * dado_blanco[6])
            + (dado_negro[6] * dado_blanco[1]) + (dado_negro[6] * dado_blanco[3]) + (dado_negro[6] * dado_blanco[5]))
 
-print('La probabilidad de obtener un número par e impar en una tirada es de:', promedio_par_impar)
+print('La probabilidad de obtener un número par e impar en una tirada es de:', probabilidad_par_impar)
 
 
 

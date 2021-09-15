@@ -10,12 +10,21 @@ def ver_si_es_primo(numero_ingresado):
 
     return primo
 
+# Defino una variable en la que voy a meter al número que estoy llamando
 es_primo = input("Ingrese un número natural: ")
+
+
+# Lo que ingrese por input es un string, así que intento transformarlo a int, y si falla tiro una excepción
 
 try:
     es_primo = int(es_primo)
 except:
     print("No ingresó un número natural")
 
+
+# Le aplico la función "ver si es primo" al número ingresado e imprimo por pantalla el número + True, si es primo
+# y el número + False, si no es primo
+
 respuesta_es_primo = ver_si_es_primo(es_primo)
+
 print(es_primo, respuesta_es_primo)

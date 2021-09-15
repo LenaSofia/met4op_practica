@@ -1,13 +1,4 @@
 
-es_primo = input("Ingrese un número natural: ")
-
-try:
-    es_primo = int(es_primo)
-except:
-    print("No ingresó un número natural")
-
-
-
 def ver_si_es_primo(numero_ingresado):
     '''Verifica si el número es primo, dividiendolo entre los numeros enteros de 2 a si mismo -1'''
     primo = True # Empezamos asumiendo que el número es primo
@@ -19,3 +10,12 @@ def ver_si_es_primo(numero_ingresado):
 
     return primo
 
+es_primo = input("Ingrese un número natural: ")
+
+try:
+    es_primo = int(es_primo)
+except:
+    print("No ingresó un número natural")
+
+respuesta_es_primo = ver_si_es_primo(es_primo)
+print(es_primo, respuesta_es_primo)
